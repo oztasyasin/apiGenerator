@@ -1,0 +1,17 @@
+using Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Business.Abstract
+{
+    public interface I#Service
+    {
+        List<#> GetAll();
+        # Get(int id);
+	    void Add(# *);
+        void Update(# *);
+        void Delete(# *);
+
+    }
+}

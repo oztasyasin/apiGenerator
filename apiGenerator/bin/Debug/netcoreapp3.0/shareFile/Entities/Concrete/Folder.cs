@@ -1,0 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Core;
+
+namespace Entities.Concrete
+{
+    public class Folder : IEntity
+    {
+        public string Name { get; set; }
+		
+    }
+}

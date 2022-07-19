@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Business.Abstract;
+using DataAccess.Abstract;
+using Entities.Concrete;
+
+namespace Business.Concrete
+{
+    public  class #Manager : I#Service
+    {
+        private I#Dal _*Dal;
+
+        public #Manager(I#Dal *Dal)
+        {
+            _*Dal = *Dal;
+        }
+
+        public void Add(# *)
+        {
+            _*Dal.Add(*);
+        }
+
+        public void Delete(# *)
+        {
+            _*Dal.Delete(*);
+        }
+
+        public List<#> GetAll()
+        {
+           return _*Dal.GetList();
+        }
+	    public # Get(int id)//
+	    {
+	        return _*Dal.Get(p => p.Id == id);
+	    }
+        public void Update(# *)
+        {
+            _*Dal.Update(*);
+        }
+
+    }
+}
